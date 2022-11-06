@@ -31,7 +31,18 @@ const Cart = () => {
                   <Rating rating={Math.round(prod.rating.rate / 2)} />
                 </Col>
                 <Col md={2}>
-                  <Form.Control as='select' value={prod.qty}>
+                  <Form.Control
+                    as='select'
+                    value={prod.qty}
+                    onChange={(e) =>
+                      dispatch({
+                        type: 'CHANGE_CART_QTY',
+                        payload: {
+                          id: prod.id,
+                          qty: e.target.value
+                        }
+                      })}
+                  >
                     {[0, 1, 2, 3, 4, 5].map((i) => (
                       <option key={i + 1}>{i + 1}</option>
                     ))}
@@ -58,7 +69,7 @@ const Cart = () => {
       </div>
       <div className="filters summary">
         <span className='title'>Subtotal ({cart.length}) productos</span>
-        <span style={{ fontWeight: 700, fontSize: 20 }}>Total: {total.toFixed(2)} €</span>
+        <span style={{ fontWeight: 700, fontSize: 20 }}>Total: {total ? total.toFixed(2) : 0} €</span>
         <Button type='button' disabled={!cart.length}>
           Proceder al pago
         </Button>
