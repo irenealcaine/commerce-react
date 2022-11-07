@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState } from 'react'
 import { Button, Form } from 'react-bootstrap'
 import { CartState } from '../context/Context'
 import Rating from './Rating'
@@ -46,7 +45,7 @@ const Filters = () => {
       <span>
         <Form.Check
           inline
-          label='Incluir fuera de stock'
+          label='Ocultar fuera de stock'
           name='group1'
           type='checkbox'
           id={`inline-3`}

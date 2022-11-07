@@ -23,7 +23,7 @@ const Home = () => {
     }
 
     if (byStock) {
-      sortedProducts = sortedProducts.filter((prod) => prod.inStock)
+      sortedProducts = sortedProducts.filter((prod) => prod.stock)
     }
 
     if (byRating) {
