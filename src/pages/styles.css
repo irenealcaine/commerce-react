@@ -1,25 +1,25 @@
 .home{
-  display:flex
+  display:flex;
+  justify-content: space-between;
+
 }
 
 .productContainer {
   display:flex;
-  width:78%;
+  width:80%;
   padding:20px;
   flex-wrap: wrap;
-  justify-content: space-around;
-
+  justify-content: center;
+background-color: #eee;
 }
 
 .filters{
-  background-color: #343a40;
+  background-color: #444;
   color: white;
   padding:20px;
   display:flex;
   flex-direction: column;
   width:20%;
-  margin:10px;
-  height: 86vh;
 }
 
 .filters > span{
@@ -30,10 +30,10 @@
   font-size: 30px;
 }
 
-.products{
+/* .products{
   width:30%;
   margin:10px;
-}
+} */
 
 .cartItem{
   display:flex;
@@ -60,11 +60,10 @@
   width:30%
 }
 
-@media (max-width:800px) {
+@media (max-width:768px) {
   .filters{
     width:40% ;
     padding: 10px;
-    margin: 5px;
   }
 
   .filters>span{
@@ -76,8 +75,8 @@
   }
 
   .productContainer{
-    width: 58%;
-    padding: 0;
+    width: 60%;
+    padding-top: 0px;
   }
 
   .search{

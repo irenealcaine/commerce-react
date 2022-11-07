@@ -5,13 +5,13 @@ import Rating from './Rating'
 
 const Filters = () => {
 
-  const { productState: { byStock, sort, byRating }, productDispatch } = CartState();
-  // console.log(byStock, sort, byRating)
+  const { productState: { byStock, sort, byRating, byCategory }, productDispatch } = CartState();
+  console.log(byStock, sort, byRating, byCategory)
 
 
   return (
     <div className='filters'>
-      <span className='title'>Filtrar productos</span>
+      <span className='title'>Ordenar</span>
       <span>
         <Form.Check
           inline
@@ -42,12 +42,14 @@ const Filters = () => {
           checked={sort === 'highToLow' ? true : false}
         />
       </span>
+      <hr />
+      <span className='title'>Filtrar</span>
       <span>
         <Form.Check
           inline
           label='Ocultar fuera de stock'
           name='group1'
-          type='checkbox'
+          type='switch'
           id={`inline-3`}
           onChange={() =>
             productDispatch({
@@ -57,9 +59,9 @@ const Filters = () => {
         />
       </span>
       <span>
-        <label style={{ paddingRight: 10 }}>
+        {/* <label style={{ paddingRight: 10 }}>
           Puntuación:
-        </label>
+        </label> */}
         <Rating rating={byRating} onClick={(i) =>
           productDispatch({
             type: 'FILTER_BY_RATING',
@@ -67,6 +69,23 @@ const Filters = () => {
           })
         } style={{ cursor: 'pointer' }} />
       </span>
+      <span>
+        <Form.Select size="sm" style={{ backgroundColor: '#444', color: 'white', width: '100%' }}
+          onChange={(e) =>
+            productDispatch({
+              type: 'FILTER_BY_CATEGORY',
+              payload: e.target.value
+            })}
+          checked={byCategory}>
+          <option>Categoría</option>
+          <option value="Ropa" >Ropa</option>
+          <option value="Electrónica">Electrónica</option>
+          <option value="Libros">Libros</option>
+          <option value="Jardinería">Jardinería</option>
+          <option value="Otros">Otros</option>
+        </Form.Select>
+      </span>
+      <hr />
       <Button
         variant='light'
         onClick={() =>

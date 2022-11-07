@@ -1,7 +1,8 @@
 import React from 'react'
-import { Badge, Button, Container, Dropdown, DropdownButton, FormControl, Nav, Navbar } from 'react-bootstrap'
+import { Badge, Button, Container, Dropdown, FormControl, Nav, Navbar } from 'react-bootstrap'
 import { AiFillDelete } from 'react-icons/ai'
 import { HiOutlineShoppingCart } from 'react-icons/hi'
+import { GiDividedSpiral } from 'react-icons/gi'
 import { Link } from 'react-router-dom'
 import { CartState } from '../context/Context'
 
@@ -14,10 +15,11 @@ const Header = () => {
   } = CartState()
 
   return (
-    <Navbar bg='dark' variant='dark' style={{ height: 80 }}>
+    <Navbar variant='dark' style={{ height: 80, backgroundColor: '#444' }} sticky="top">
       <Container>
         <Navbar.Brand>
-          <Link to='/'>Nombre</Link>
+          <GiDividedSpiral style={{ fontSize: 35 }} />
+          <Link to='/'> Comercio</Link>
         </Navbar.Brand>
         <Navbar.Text className='search'>
           <FormControl
@@ -34,10 +36,10 @@ const Header = () => {
         </Navbar.Text>
         <Nav>
           <Dropdown align={{ sm: "right" }}>
-            <Dropdown.Toggle>
+            <Dropdown.Toggle >
               <HiOutlineShoppingCart fontSize='25px' />
               <Badge>{cart.length}</Badge>
-            </Dropdown.Toggle>
+            </Dropdown.Toggle >
             <Dropdown.Menu style={{ minWidth: 370 }}>
 
               {cart.length > 0 ? (
@@ -75,10 +77,10 @@ const Header = () => {
 
 
             </Dropdown.Menu>
-          </Dropdown>
-        </Nav>
-      </Container>
-    </Navbar>
+          </Dropdown >
+        </Nav >
+      </Container >
+    </Navbar >
   )
 }
 

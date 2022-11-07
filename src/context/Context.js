@@ -17,6 +17,7 @@ const Context = ({ children }) => {
     byStock: false,
     byRating: 0,
     searchQuery: "",
+    byCategory: ''
   });
 
   return (
