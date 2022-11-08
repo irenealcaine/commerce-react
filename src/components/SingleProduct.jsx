@@ -12,20 +12,33 @@ const SingleProduct = ({ prod }) => {
     <div className='products' style={{ marginTop: 20 }}>
       <Col>
         <Card className='shadow'>
-          <Card.Header as="h5" style={{ backgroundColor: '#fff' }}>{prod.title}</Card.Header>
           <Card.Img
             variant='top'
             src={prod.image}
             alt={prod.title}
           />
           <Card.Body>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <Card.Title style={{ margin: 0 }}>{prod.price.toFixed(2)} €</Card.Title>
-              <Card.Subtitle>
+            <Card.Title style={{ marginBottom: 0 }}>{prod.title}</Card.Title>
+            <Card.Title as='h4' style={{ marginBottom: 8 }}>{prod.price.toFixed(2)} €</Card.Title>
+            <div style={{ display: 'flex', alignItems: 'center', marginBottom: 8 }}>
+              <Card.Subtitle >
                 <Rating rating={Math.round(prod.rating.rate / 2)} />
               </Card.Subtitle>
+              <Card.Subtitle className="text-muted">
+                ({prod.rating.count})
+              </Card.Subtitle>
             </div>
-            <Card.Subtitle className="text-muted" style={{ marginTop: 10, marginBottom: 10 }}>{prod.category}</Card.Subtitle>
+            <Card.Text style={{
+              maxWidth: '100%',
+              display: '-webkit-box',
+              WebkitBoxOrient: 'vertical',
+              WebkitLineClamp: 2,
+              overflow: 'hidden',
+              textOverflow: 'ellipsis',
+            }}>
+              {prod.description}
+            </Card.Text>
+            <Card.Subtitle className="text-muted" style={{ marginTop: 10, marginBottom: 10, fontSize: 14 }}>{prod.category}</Card.Subtitle>
 
             {
               cart.some(p => p.id === prod.id) ? (
@@ -62,7 +75,7 @@ const SingleProduct = ({ prod }) => {
           </Card.Body>
         </Card>
       </Col>
-    </div>
+    </div >
   )
 }
 

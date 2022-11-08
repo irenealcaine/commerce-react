@@ -70,7 +70,7 @@ const Filters = () => {
         } style={{ cursor: 'pointer' }} />
       </span>
       <span>
-        <Form.Select size="sm" style={{ backgroundColor: '#444', color: 'white', width: '100%' }}
+        <Form.Select size="sm" style={{ backgroundColor: '#252850', color: 'white', width: '100%' }}
           onChange={(e) =>
             productDispatch({
               type: 'FILTER_BY_CATEGORY',

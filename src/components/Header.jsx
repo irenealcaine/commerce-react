@@ -15,7 +15,7 @@ const Header = () => {
   } = CartState()
 
   return (
-    <Navbar variant='dark' style={{ height: 80, backgroundColor: '#444' }} sticky="top">
+    <Navbar variant='dark' style={{ height: 80, backgroundColor: '#282550' }} sticky="top">
       <Container>
         <Navbar.Brand>
           <GiDividedSpiral style={{ fontSize: 35 }} />
