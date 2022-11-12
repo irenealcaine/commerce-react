@@ -19,7 +19,9 @@ const Home = () => {
       sortedProducts = sortedProducts.sort((a, b) => (
         sort === 'lowToHigh'
           ? a.price - b.price
-          : b.price - a.price
+          : sort === 'popularToUnpopular'
+            ? b.rating.count - a.rating.count
+            : b.rating.rate - a.rating.rate
       ))
     }
 

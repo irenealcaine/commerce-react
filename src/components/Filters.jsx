@@ -15,7 +15,7 @@ const Filters = () => {
       <span>
         <Form.Check
           inline
-          label='Precio ascendente'
+          label='Precio'
           name='group1'
           type='radio'
           id={`inline-1`}
@@ -30,16 +30,31 @@ const Filters = () => {
       <span>
         <Form.Check
           inline
-          label='Precio descendente'
+          label='Popularidad'
           name='group1'
           type='radio'
           id={`inline-2`}
           onChange={() =>
             productDispatch({
               type: 'SORT_BY_PRICE',
-              payload: 'highToLow'
+              payload: 'popularToUnpopular'
             })}
-          checked={sort === 'highToLow' ? true : false}
+          checked={sort === 'popularToUnpopular' ? true : false}
+        />
+      </span>
+      <span>
+        <Form.Check
+          inline
+          label='Valoración'
+          name='group1'
+          type='radio'
+          id={`inline-3`}
+          onChange={() =>
+            productDispatch({
+              type: 'SORT_BY_PRICE',
+              payload: 'goodToBad'
+            })}
+          checked={sort === 'goodToBad' ? true : false}
         />
       </span>
       <hr />
@@ -49,8 +64,8 @@ const Filters = () => {
           inline
           label='Ocultar fuera de stock'
           name='group1'
-          type='switch'
-          id={`inline-3`}
+          type='checkbox'
+          id={`inline-4`}
           onChange={() =>
             productDispatch({
               type: 'FILTER_BY_STOCK'
@@ -76,7 +91,7 @@ const Filters = () => {
               type: 'FILTER_BY_CATEGORY',
               payload: e.target.value
             })}
-          checked={byCategory}>
+        >
           <option>Categoría</option>
           <option value="Ropa" >Ropa</option>
           <option value="Electrónica">Electrónica</option>

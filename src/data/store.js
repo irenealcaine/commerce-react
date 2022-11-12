@@ -1,11 +1,24 @@
 export const products = [
   {
     "id": 1,
-    "title": "Crema Nivea",
+    "title": "Collar de gatos 2 piezas",
+    "price": 12.59,
+    "description": "Collares gemelos de gatos. Cadenas de 55 cm.",
+    "category": "Otros",
+    "image": "https://img.ltwebstatic.com/images3_pi/2022/07/05/1656986624a76cfab8b14d6221b2d7b269213a625f_thumbnail_900x.webp",
+    "stock": false,
+    "rating": {
+      "rate": 2.3,
+      "count": 124
+    }
+  },
+  {
+    "id": 2,
+    "title": "Crema hidratante",
     "price": 3.50,
     "description": "Elimina las arrugas e hidrata, deja la piel suave y brillante. De uso diario.",
     "category": "Otros",
-    "image": "https://m.media-amazon.com/images/I/61t5b29Y4rL._AC_SL1500_.jpg",
+    "image": "https://t1.ev.ltmcdn.com/es/posts/1/5/3/como_hacer_crema_hidratante_natural_1351_600.jpg",
     "stock": true,
     "rating": {
       "rate": 9.8,
@@ -13,8 +26,8 @@ export const products = [
     }
   },
   {
-    "id": 2,
-    "title": "Ordenador portátil",
+    "id": 3,
+    "title": "Portátil gaming",
     "price": 1499,
     "description": "Apto para jugar a los últimos lanzamientos en 4k y 120 fps. Disfruta de una potencia nunca vista y rendimiento óptimo sin ruido.",
     "category": "Electrónica",
@@ -26,7 +39,7 @@ export const products = [
     }
   },
   {
-    "id": 3,
+    "id": 4,
     "title": "Camiseta antisocial",
     "price": 16.99,
     "description": "No soy antisocial, soy antiestúpidos.",
@@ -39,7 +52,7 @@ export const products = [
     }
   },
   {
-    "id": 4,
+    "id": 5,
     "title": "El señor de las moscas",
     "price": 8.75,
     "description": "El señor de las moscas es Premio Nobel de Literatura 1983, una fábula moral acerca de la condición humana.Urdida en torno a la situación límite de una treintena de muchachos en una isla desierta, El Señor de las Moscas es una magnífica novela que admite lecturas diferentes e incluso opuestas.",
@@ -52,7 +65,7 @@ export const products = [
     }
   },
   {
-    "id": 5,
+    "id": 6,
     "title": "Zapatillas",
     "price": 19.99,
     "description": "Las mejores zapatillas, buenas, bonitas, baratas y famosas.",
@@ -65,7 +78,7 @@ export const products = [
     }
   },
   {
-    "id": 6,
+    "id": 7,
     "title": "Tableta gráfica",
     "price": 59.99,
     "description": "8192 niveles de presión, sin demora, cualquier trazo está en su control. La inclinación de 60 grados brinda una mejor detección de presión, de posición del cursor y un mejor rendimiento.",
@@ -78,7 +91,7 @@ export const products = [
     }
   },
   {
-    "id": 7,
+    "id": 8,
     "title": "Harry Potter",
     "price": 159.99,
     "description": "Contando con el rediseño de cubierta a cargo del galardonado ilustrador Jonny Duddle, estos libros son una nueva propuesta, muy atractiva, para acercar Harry Potter a todos los públicos: desde coleccionistas hasta los lectores más jóvenes.",
@@ -91,7 +104,7 @@ export const products = [
     }
   },
   {
-    "id": 8,
+    "id": 9,
     "title": "Vestido",
     "price": 12,
     "description": "Tipo de material: poliéster y elastano. Es muy cómodo de llevar y es sedoso al tacto.",
@@ -104,12 +117,12 @@ export const products = [
     }
   },
   {
-    "id": 9,
+    "id": 10,
     "title": "Semillas de tomate",
     "price": 1.25,
     "description": "Planta de ciclo medio, con frutos alargados de color rojo intenso, plantar a finales de verano",
     "category": "Jardinería",
-    "image": "https://theoriginalgarden.com/Argazkiak/Fotos/20180326171124.jpg",
+    "image": "https://t2.uc.ltmcdn.com/es/posts/1/8/7/como_evitar_plagas_en_las_tomateras_29781_600.jpg",
     "stock": false,
     "rating": {
       "rate": 8.3,
@@ -117,12 +130,12 @@ export const products = [
     }
   },
   {
-    "id": 10,
+    "id": 11,
     "title": "Collar",
     "price": 569,
     "description": "Esta cadena esta fabricada en plata de primera ley 925 que le brinda brillo a la joya. La plata de primera ley 925 es hipoalergénico y libre de niquel, haciendo que sea una gran opción para las personas con piel sensible",
     "category": "Otros",
-    "image": "https://cdn-eu-ec.yottaa.net/609426b74f1bbfff95ac5a83/es.pandora.net/v~4b.16/dw/image/v2/BFCR_PRD/on/demandware.static/-/Sites-pandora-master-catalog/default/dw69e9ff1c/images/productimages/main/390055C01_RGB.jpg?sw=900&sh=900&sm=fit&sfrm=png&bgcolor=F5F5F5&yocs=9_e_",
+    "image": "https://www.whiteandone.es/23814-large_default/collar-mama.jpg",
     "stock": true,
     "rating": {
       "rate": 7.6,
@@ -130,7 +143,7 @@ export const products = [
     }
   },
   {
-    "id": 11,
+    "id": 12,
     "title": "Por si las voces vuelven",
     "price": 12.50,
     "description": "Hace unos años me rompí por completo. Tanto como para que tuvieran que atarme a la cama de un hospital psiquiátrico para evitar que pudiera hacerme daño.",
@@ -143,7 +156,7 @@ export const products = [
     }
   },
   {
-    "id": 12,
+    "id": 13,
     "title": "2 x RAM",
     "price": 59.99,
     "description": "2 x 8 GB. Toma el control con el software corsair icue y sincroniza la iluminación con otros productos corsair rgb, incluyendo sistemas de refrigeración para cpu, teclados y ventiladores",
@@ -151,12 +164,12 @@ export const products = [
     "image": "https://thumb.pccomponentes.com/w-530-530/articles/16/164469/1.jpg",
     "stock": false,
     "rating": {
-      "rate": 8.8,
+      "rate": 3.4,
       "count": 6
     }
   },
   {
-    "id": 13,
+    "id": 14,
     "title": "Tacones",
     "price": 699,
     "description": "Para mejorar la confiabilidad del talón: Hecha de hilos antideslizantes, la base en la parte inferior de las tapas protectoras del talón brinda tracción adicional para que camine más estable. ",
@@ -164,12 +177,12 @@ export const products = [
     "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSLC_QmQbqpBy8DXqTjUKH9DU1KhDIy0HDNW95HlztokjUyjhTzL1E1DL6bt8Zs92RvaX75qBBsLaRxixCHdWRihJGbFP6sSi7OU07cJziKN6xtLbjHEHjRl-c&usqp=CAE",
     "stock": true,
     "rating": {
-      "rate": 8.4,
+      "rate": 2.2,
       "count": 63
     }
   },
   {
-    "id": 14,
+    "id": 15,
     "title": "Herramientas de jardinería",
     "price": 29.75,
     "description": "Herramientas para el jadrdín de aleación de aluminio de alta resistencia, que tiene una fuerte resistencia al óxido y la corrosión. La aleación de aluminio engrosado tiene una gran dureza, es duradera y no se rompe fácilmente.",
@@ -182,7 +195,7 @@ export const products = [
     }
   },
   {
-    "id": 15,
+    "id": 16,
     "title": "¡Guardias! ¡Guardias!",
     "price": 11.99,
     "description": "La Guardia Nocturna de la ciudad de Ank-Morkpok no tiene mucho trabajo. De los crímenes se ocupan los Gremios de Ladrones y de Asesinos, sin pasarse de una cuota fija al mes, por supuesto.",
@@ -195,12 +208,12 @@ export const products = [
     }
   },
   {
-    "id": 16,
+    "id": 17,
     "title": "Cuaderno",
     "price": 3.69,
-    "description": "Espiral simple negra, gira las páginas 360° cómodamente. Tapas de plástico translúcido, ligeras pero resistentes",
+    "description": "Espiral simple negra, gira las páginas 360° cómodamente. Tapas de plástico duro, ligeras pero resistentes",
     "category": "Otros",
-    "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTiZKkVgYIb9obxxqKMceLsRS8X0958Biv9qKfRlMmunRMhkeYKbI3NiGoRqoSI6uACilvrotNBubVjFntF66vrGlEL4FFBSgj7Z6GeDRfBblxrl2NeCrCn&usqp=CAE",
+    "image": "https://frikispaceshop.com/wp-content/uploads/2021/08/10-1.jpg",
     "stock": true,
     "rating": {
       "rate": 5.9,
@@ -208,7 +221,7 @@ export const products = [
     }
   },
   {
-    "id": 17,
+    "id": 18,
     "title": "Vapeador",
     "price": 45.75,
     "description": "-El e-cigarrillo incorporado 2200mAh recargable de batería de litio de alta calidad, que le da una larga vida al cigarrillo electrónico.",
@@ -221,12 +234,12 @@ export const products = [
     }
   },
   {
-    "id": 18,
+    "id": 19,
     "title": "Maceta",
     "price": 2.99,
     "description": "El diseño simple del macetero para plantas se adapta a casi todos los estilos de decoración.",
     "category": "Jardinería",
-    "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSQraVmRtJa4eMwvCudgzZesVgol2s9v0o2DHWNT8eC-a5O9kC58kOt3f5ZCnVAXimifhgVgUnTgbQqMiS8uO5imhMHZgWEjbqLv7SACHnPtj6KYME_mG45&usqp=CAE",
+    "image": "https://st.depositphotos.com/1177973/4693/i/450/depositphotos_46931483-stock-photo-clay-flower-pot-with-soil.jpg",
     "stock": true,
     "rating": {
       "rate": 9.0,
@@ -234,7 +247,7 @@ export const products = [
     }
   },
   {
-    "id": 19,
+    "id": 20,
     "title": "Camiseta Linux",
     "price": 15,
     "description": "Lavar a mano, lavar a máquina o lavar en seco.",
@@ -247,12 +260,38 @@ export const products = [
     }
   },
   {
-    "id": 20,
+    "id": 21,
+    "title": "JavaScript fácil",
+    "price": 18.81,
+    "description": "Actualmente JavaScript representa uno de los principales lenguajes de la web. El objetivo de este libro será introducir al lector en los principios de la programación y en el uso de JavaScript como lenguaje para inducir dinamismo en una página web. ",
+    "category": "Libros",
+    "image": "https://www.popularlibros.com/imagenes.webp/9788426/978842672168.webp",
+    "stock": true,
+    "rating": {
+      "rate": 10,
+      "count": 217
+    }
+  },
+  {
+    "id": 22,
+    "title": "Cortacésped eléctrico 1300 W",
+    "price": 75.99,
+    "description": "Producto estrella Cortacésped eléctrico 1300 W con ajuste de la altura de corte en 3 niveles: aprox. 20 / 40 / 60 mm.",
+    "category": "Jardinería",
+    "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSQ1uMh6tOgFieWTbtj8ewKHJ9JnE8ZZ5oyTCcS9QAFkc5cmSYkOtvsKZrjV8ulk7fq1nUvKAwoJh8Hb-pGehFwP0UYdHf2CRlouBT_IXk-IMm4wdVPJk3Vs1I&usqp=CAE",
+    "stock": true,
+    "rating": {
+      "rate": 6.2,
+      "count": 27
+    }
+  },
+  {
+    "id": 23,
     "title": "Anillo",
     "price": 79.79,
     "description": "Regalo perfecto para sus amigas, familias, conocidos, compañeras o para usted mismo.",
     "category": "Otros",
-    "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTNsT1t4z_UkBYJcl7mMZETjCnk7kWm5vN1jwRkc63YnAPNnmUdBRarFwaD4Ni6pb9zhdvQ0N8S2w7S_Got-vBJUfwfYI5cGgV5oGShjMZe9Gj04TZ-zp1YlEeP&usqp=CAE",
+    "image": "https://media.trensjoies.com/product/anillo-serpiente-plata-de-ley-800x800.jpg",
     "stock": true,
     "rating": {
       "rate": 9.9,
@@ -260,7 +299,7 @@ export const products = [
     }
   },
   {
-    "id": 21,
+    "id": 24,
     "title": "Mort",
     "price": 13.69,
     "description": "En esta entrega, Mortimer es un joven soñador y despistado a quien le toca en suerte una inesperada tarea: convertirse en aprendiz de la Muerte y aplicarse en liberar almas de su envoltura carnal.",
@@ -273,7 +312,7 @@ export const products = [
     }
   },
   {
-    "id": 22,
+    "id": 25,
     "title": "Rosal mini",
     "price": 5.99,
     "description": "Los colores se elegirán aleatoriamente entre los más floridos de cada semana a menos que se indique por correo los colores deseados.",
@@ -286,12 +325,12 @@ export const products = [
     }
   },
   {
-    "id": 23,
+    "id": 26,
     "title": "Semillas de césped",
     "price": 5.65,
     "description": "Se puede utilizar para jardines públicos, privados o campos de deporte",
     "category": "Jardinería",
-    "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ_rsVXuxNooHshj9-DiPAyJSdfxsA78BuWWT33UXii1f20sx0-eqH6MUCflOQsV6fdonMyc-cB6YDO3PeFTSFGmWeV-N0LN3n_FLjUodDiPyOQfaIFsPiW&usqp=CAE",
+    "image": "http://i1.wp.com/abonosconde.com/wp-content/uploads/2016/03/semilla-cesped-800x600.jpg",
     "stock": true,
     "rating": {
       "rate": 8.9,
@@ -299,7 +338,7 @@ export const products = [
     }
   },
   {
-    "id": 24,
+    "id": 27,
     "title": "Tarjeta gráfica",
     "price": 599.99,
     "description": "Multiprocesadores NVIDIA Ampere Streaming Los componentes básicos de las GPU más rápidas y eficientes del mundo, el nuevo Ampere SM ofrece el doble de rendimiento FP32 y una eficiencia energética mejorada.",
@@ -312,7 +351,7 @@ export const products = [
     }
   },
   {
-    "id": 25,
+    "id": 28,
     "title": "Camiseta de hora de aventuras",
     "price": 45.99,
     "description": "Lavar en seco, 100% algodón.",
@@ -325,12 +364,25 @@ export const products = [
     }
   },
   {
-    "id": 26,
+    "id": 29,
+    "title": "Bonsai Terra",
+    "price": 54.58,
+    "description": "Árbol artificial de 49cm con maceta negra",
+    "category": "Jardinería",
+    "image": "https://cdn.shopify.com/s/files/1/0550/9002/0422/products/FotosfotografoformatoWEB30_720x.jpg?v=1666879922",
+    "stock": true,
+    "rating": {
+      "rate": 4.1,
+      "count": 14
+    }
+  },
+  {
+    "id": 30,
     "title": "Bolso",
     "price": 5.99,
     "description": " El diseño simple en negro puro hace de este bolso un artículo de moda clásico y discreto.",
     "category": "Otros",
-    "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTbkibPZUGpxoscaXrVh2r0VIMG3UTQzMk7nxLxorbAN-xmJHXZQorgz3lKd9jxI6yC8YVOuat4P2sw1_chn2XaKYz8VZ0qChfUmjBPgQ0FV1MoZDoO88njUuQ&usqp=CAE",
+    "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRYnCdWwhn9VHFzQ2pRBO0J2d7rWeP0ereuRZ7J7Yxo-y_HaqeIq0RUGlgGGpSOqnPzczBNexr3Ilbz4yIoDrYvA2_ENR4CPk5tx9TnoD4&usqp=CAE",
     "stock": true,
     "rating": {
       "rate": 5.7,
@@ -338,7 +390,7 @@ export const products = [
     }
   },
   {
-    "id": 27,
+    "id": 31,
     "title": "Aguacate",
     "price": 32.77,
     "description": "Clima: necesitan calor y humedad, así que lo ideal es que haya un clima que sea húmedo y cálido durante el verano pero seco y frío en invierno",
@@ -351,7 +403,20 @@ export const products = [
     }
   },
   {
-    "id": 28,
+    "id": 32,
+    "title": "Pijama de adulto",
+    "price": 24.99,
+    "description": "Extremadamente suave, cálido y cómodo. Un diseño adorable te queda perfectamente.",
+    "category": "Ropa",
+    "image": "https://img.ltwebstatic.com/images3_pi/2021/11/20/163737872804d1b14a6dd58df3dc60c2b026aba08a_thumbnail_900x.webp",
+    "stock": true,
+    "rating": {
+      "rate": 3,
+      "count": 345
+    }
+  },
+  {
+    "id": 33,
     "title": "Ordenador portátil",
     "price": 1599,
     "description": "las aplicaciones se cargan más rápido, los gráficos funcionan mejor y la multitarea es más eficiente en este PC portátil con memoria RAM de 4 GB, tarjeta gráfica integrada Intel UHD y procesador Intel Celeron N4500",
@@ -364,7 +429,7 @@ export const products = [
     }
   },
   {
-    "id": 29,
+    "id": 34,
     "title": "Pulsera",
     "price": 455.99,
     "description": "Diseñada para perdurar en el tiempo: las joyas Swarovski lucen por si solas gracias al brillo y la talla del cristal junto a los metales más resistentes; evita el agua, las lociones o el perfume.",
@@ -377,7 +442,7 @@ export const products = [
     }
   },
   {
-    "id": 30,
+    "id": 35,
     "title": "Naranjo",
     "price": 15.45,
     "description": "Naranjas de sabor suave, equilibrado, dulce y con mucho zumo. La naranja es una fruta con alto contenido en antioxidantes, vitamina C, vitamina B9, potasio, calcio y fósforo",
@@ -390,7 +455,33 @@ export const products = [
     }
   },
   {
-    "id": 31,
+    "id": 36,
+    "title": "Calcetines World of Warcraft",
+    "price": 13.99,
+    "description": "Calcetines de talla única. Ideales para defender Azeroth con los pies bien calentitos. Versión de la horda.",
+    "category": "Ropa",
+    "image": "https://static.posters.cz/image/750webp/101150.webp",
+    "stock": true,
+    "rating": {
+      "rate": 7.8,
+      "count": 206
+    }
+  },
+  {
+    "id": 37,
+    "title": "Taza CSS",
+    "price": 24.19,
+    "description": "Los sitios web de hoy no existirían sin CSS y, seamos honestos, todos lo sabemos. Para el diseñador web o desarrollador en su vida que ama CSS, ¡esta taza es el regalo perfecto! Es una forma divertida y única de mostrar cuánto aprecias su pasión por hacer sitios web hermosos.",
+    "category": "Otros",
+    "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRZ2T1-8KRFWwA86fyfomQt07aHYyk1Yt4u38KfRO5Dlbt5VT33vJY6rzWyRPhB-5x5hdinAoTwyrQsijNw8socDSWLnYPi5_lt50D3O3Kaf5FJyDueUaVHy_S2&usqp=CAE",
+    "stock": false,
+    "rating": {
+      "rate": 10,
+      "count": 4426
+    }
+  },
+  {
+    "id": 38,
     "title": "El color de la magia",
     "price": 14.55,
     "description": "En un mundo plano sostenido por cuatro elefantes impasibles -que se apoyan en la espalda de una tortuga gigante- habitan los estrafalarios personajes de esta novela: un hechicero avaro y torpe, un turista ingenuo cuyo fiero equipaje le sigue a todas partes sostenido por cientos de patitas, dragones que solo existen si se cree en ellos, gremios de ladrones y asesinos, espadas mágicas, la Muerte y, por supuesto, un extenso catálogo de magos y demonios...",
@@ -403,7 +494,7 @@ export const products = [
     }
   },
   {
-    "id": 32,
+    "id": 39,
     "title": "Ebook",
     "price": 23.99,
     "description": "Ahora con una pantalla de 6,8 pulgadas, bordes reducidos, luz cálida ajustable, autonomía de hasta 10 semanas y pasos de página un 20 % más rápidos.",
@@ -416,7 +507,7 @@ export const products = [
     }
   },
   {
-    "id": 33,
+    "id": 40,
     "title": "Agenda",
     "price": 5.60,
     "description": "Duración: Septiembre 2022 - Junio 2023 (curso lectivo) + Julio y Agosto resumidos",
@@ -429,7 +520,7 @@ export const products = [
     }
   },
   {
-    "id": 34,
+    "id": 41,
     "title": "Smartwatch",
     "price": 45.99,
     "description": "Durante las actividades diarias y los descansos, los sensores de movimiento de alto rendimiento monitorean la frecuencia cardíaca, el estado del sueño (sueño profundo, sueño superficial, despertar).",
@@ -442,7 +533,7 @@ export const products = [
     }
   },
   {
-    "id": 35,
+    "id": 42,
     "title": "Azucenas",
     "price": 7.99,
     "description": "Son plantas con órganos subterráneos que sirven para garantizar periódicamente la supervivencia de la especie en la época más desfavorable del año. ",
@@ -455,7 +546,7 @@ export const products = [
     }
   },
   {
-    "id": 36,
+    "id": 43,
     "title": "Manguera",
     "price": 17.99,
     "description": "Para regar el césped, las plantas, las flores, las jardineras, los árboles o los arbustos. También puede utilizarse para limpiar los muebles de jardín, la terraza o para lavar los coches.",
@@ -465,6 +556,19 @@ export const products = [
     "rating": {
       "rate": 9.6,
       "count": 4516
+    }
+  },
+  {
+    "id": 44,
+    "title": "Si no te ríes, es peor",
+    "price": 13.25,
+    "description": "Si no te ríes, es peor. El gran libro de los chistes es un libro desternillante para llevar a todas partes y compartir con tus amigos. Diviértete con sus chistes, bromas y juegos de palabras que harán reír a quienquiera que se los cuentes. ¿Sabes por qué viene del mar el marisco? ¡Porque si viniera de Francia sería el Francisco!",
+    "category": "Libros",
+    "image": "https://m.media-amazon.com/images/I/51f2wqTp1-L._SX345_BO1,204,203,200_.jpg",
+    "stock": true,
+    "rating": {
+      "rate": 6.6,
+      "count": 22
     }
   }
 ]
