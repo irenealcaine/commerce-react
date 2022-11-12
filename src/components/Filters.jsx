@@ -92,7 +92,7 @@ const Filters = () => {
               payload: e.target.value
             })}
         >
-          <option>Categoría</option>
+          <option value=''>Categoría</option>
           <option value="Ropa" >Ropa</option>
           <option value="Electrónica">Electrónica</option>
           <option value="Libros">Libros</option>
