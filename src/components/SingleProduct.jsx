@@ -14,7 +14,9 @@ const SingleProduct = ({ prod }) => {
   return (
     <div className="products" style={{ marginTop: 20 }}>
       <Col>
-        <Link to={`/${prod.id}`}>
+        <Link
+          to={`/${prod.id}`}
+        >
           <Card className="shadow">
             <Card.Img variant="top" src={prod.image} alt={prod.title} />
             <Card.Body>

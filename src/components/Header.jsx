@@ -10,7 +10,7 @@ import {
 } from "react-bootstrap";
 import { AiFillDelete } from "react-icons/ai";
 import { HiOutlineShoppingCart } from "react-icons/hi";
-import { GiDividedSpiral } from "react-icons/gi";
+// import { GiDividedSpiral } from "react-icons/gi";
 import { Link } from "react-router-dom";
 import { CartState } from "../context/Context";
 import logo from "../assets/shop.png";
