@@ -17,7 +17,7 @@ const Product = () => {
   return (
     <div className="product">
       <Container className="container-fluid" style={{ padding: "15px" }}>
-        <Button variant="info" ><Link to="/" >Atrás</Link></Button>
+        <Link to="/" className="h3" color="info">Atrás</Link>
         <div class="row" style={{ marginTop: "30px" }}>
           <div class="col-12 col-md-4">
             <img className="img-fluid" src={product.image} alt={product.title} />
